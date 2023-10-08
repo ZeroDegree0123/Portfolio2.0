@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Serif+Display&family=Nunito&family=Playball&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/main.css">
     <title>Portfolio</title>
 </head>
 <body>
     <section class="header-container">
         <div class="header-subcontainer">
-            <img class="profile-img" src="https://imgur.com/7h995Vy.png">
             <div class="header-body">
-                <h1>ZACHARY VASQUEZ</h1>
-                <p>A simple man looking for a job... god please god help me get a job</p>
+                <h1>ZACHARY</h1>
+                <h1 id="last-name">VASQUEZ</h1>
             </div>
+            <img class="profile-img" src="https://imgur.com/7h995Vy.png">
         </div>
-        <div>
-            <div class="red-curve">
+        <div class="curves-container">
+            <div class="curve" id="red">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <div class="green-curve">
+            <div class="curve" id="yellow">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <div class="blue-curve">
+            <div class="curve" id="blue">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
                 </svg>
@@ -35,12 +38,59 @@
     </section>
     <div class="waves layer1"></div>
     <section class="about-container">
-        <h1>about me</h1>
+        <div class="about-body-container">
+            <img src="https://imgur.com/7h995Vy.png">
+            <div class="about-body">
+                <p>
+                    I'm a full-stack software engineer actively learning and seeking new
+                    and innovated ways to make my projects come to life. I love solving problems and creating
+                    unique designs, I enjoy the artistic side of coding. When it comes to programming, I really like the 
+                    atmosphere and have big ambitions being a programmer.
+                </p>
+                <p>
+                    I've created high quality content and take great pride in my work. I'm always striving to 
+                    improve, looking for new ways to make my creations more user friendly and pleasingly asthetic.
+                </p> 
+            </div>
+        </div>
+        <div>
+           <h1>Get In Touch...</h1>
+           <ul>
+                <li>Resume</li>
+                <li>LinkedIn</li>
+                <li>Email</li>
+                <li>Blog</li>
+           </ul>
+        </div>
+
     </section>
     <div class="waves layer2"></div>
     <section class="projects-container">
         <h1>work</h1>
     </section>
+    <footer>
+        <h1>footer</h1>
+    </footer>
     <script src="./assets/main.js"></script>
 </body>
 </html>
+
+<!-- <div class="about-body-container">
+    <h1 class="occupation">Full-Stack Developer</h1>
+    <div class="about-link-container">
+        <p class="about-links">&#62 <strong>Resume:</strong> <a href="https://drive.google.com/file/d/1hggBJq3d9PimMYcg_Z3GSpMK9MOb4GPO/view?usp=sharing">Resume Link</a></p>
+        <p class="about-links">&#62 <strong>Location:</strong> <span>Vancouver, WA</p>
+        <p class="about-links">&#62 <strong>Email:</strong> <a href="mailto:zachary.vasquez.w@gmail.com" target="_blank">My Email</a></p>
+        <p class="about-links">&#62 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zacharymvasquez/" target="_blank">LinkedIn Link</a></p>
+    </div>
+    <p class="about-body">
+        I'm a full-stack software engineer actively learning and seeking new
+        and innovated ways to make my projects come to life. I love solving problems and creating
+        unique designs, I enjoy the artistic side of coding. When it comes to programming, I really like the 
+        atmosphere and have big ambitions being a programmer.
+    </p>
+    <p class="about-body">
+        I've created high quality content and take great pride in my work. I'm always striving to 
+        improve, looking for new ways to make my creations more user friendly and pleasingly asthetic.
+    </p> 
+</div> -->
