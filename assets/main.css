@@ -35,6 +35,7 @@ section {
 
 footer {
     height: 50vh;
+    background-color: var(--blue);
 }
 
 /* --------------------------------
@@ -85,46 +86,88 @@ footer {
 /* --------------------------------
 # About
 -------------------------------- */
+.about-title {
+    font-size: 40px;
+    padding: 100px;
+    margin: 0;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     background-color: var(--yellow);
 }
 
 .about-body-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    max-width: 800px;
-    max-height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .about-body-container>img {
-    grid-area: 1 / 1 / 4 / 4;
     width: 450px;
     height: 400px;
-    box-shadow: var(--lg-shadow);
+    padding-right: 10px;
+    /* box-shadow: var(--lg-shadow); */
+    border-right: 2px solid var(--blue);
 }
 
 .about-body {
-    grid-area: 3 / 3 / 6 / 6;
     padding: 15px;
+    margin: 10px;
     width: 400px;
     height: 400px;
-    background-color: white;
+    background-color: var(--yellow);
     box-shadow: var(--lg-shadow);
 }
 
+.about-body>h2 {
+    font-size: 30px;
+}
+
 .about-body>p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     margin: 0;
 }
 
-/* .about-container>* {
+.about-contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-} */
+}
+
+.about-contacts-container>h1 {
+    font-size: 35px;
+    padding-top: 100px;
+}
+
+.about-contacts-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.about-contacts-list>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links {
+    text-decoration: center;
+    padding: 10px;
+}
+
 
 
 
@@ -180,9 +223,107 @@ footer {
 }
 
 .layer1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
     background-image: url('./layers/layer1.svg');
 }
 
 .layer2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
     background-image: url('./layers/layer2.svg');
 }
+
+/* --------------------------------
+# Projects
+-------------------------------- */
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+.project-card {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #00aeff;
+}
+
+/* --------------------------------
+# CUBE MODEL
+-------------------------------- */
+
+/* .cube-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        perspective: 50em;
+        perspective-origin: 450px 80px;
+        background: var(--yellow);
+        position: relative;
+    }
+    
+    .cube {
+        transform-style: preserve-3d;
+    }
+    
+    .cube-shadow {
+        position: absolute;
+        background: #fff;
+        width: 2em;
+        height: 2em;
+        transform: rotateX(90deg);
+        bottom: 4em;
+        left: 1em;
+    
+    
+    }
+    
+    .front,
+    .back,
+    .left,
+    .right,
+    .top,
+    .bottom {
+        height: 5em;
+        width: 5em;
+        background: var(--blue);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.186) inset,
+            0 0 2em var(--blue) inset;
+    }
+    
+    .front {
+        transform: translateZ(2.5em);
+    }
+    
+    .back {
+        transform: translateZ(-2.5em);
+    }
+    
+    .top {
+        transform: translateY(-2.5em) rotateX(90deg);
+    }
+    
+    .bottom {
+        transform: translateY(2.5em) rotateX(90deg);
+    }
+    
+    .right {
+        transform: translateX(2.5em) rotateY(90deg);
+    }
+    
+    .left {
+        transform: translateX(-2.5em) rotateY(90deg);
+    } */
