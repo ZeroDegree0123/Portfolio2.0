@@ -5,6 +5,10 @@
     --red: #ff0051;
     --yellow: #ffc800;
     --blue: #00aeff;
+
+    --primary-faded: #23252bc9;
+    --secondary-faded: rgba(255, 187, 0, 0.6);
+
     --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --lg-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 
@@ -150,6 +154,10 @@ section {
     color: var(--red);
 }
 
+#last-name {
+    margin-right: -100px;
+}
+
 #first-l {
     grid-area: 1 / 1 / 3 / 4;
     border-left: 2px solid var(--yellow);
@@ -161,10 +169,6 @@ section {
     grid-area: 1 / 1 / 3 / 4;
     border-bottom: 2px solid var(--yellow);
     margin-bottom: -25px;
-}
-
-#last-name {
-    margin-right: -100px;
 }
 
 /* --------------------------------
@@ -358,6 +362,7 @@ footer>p {
     width: 100%;
     height: 100%;
     z-index: inherit;
+    color: white;
 }
 
 .close {
@@ -445,6 +450,26 @@ footer>p {
     padding: 0 20px;
 }
 
+#vasquez-farms-bg {
+    background: linear-gradient(65deg, var(--primary-faded), var(--primary-faded)),
+        url("https://imgur.com/aKLqJ5Q.png");
+}
+
+#zachs-burgers-bg {
+    background: linear-gradient(65deg, var(--primary-faded), var(--primary-faded)),
+        url("https://imgur.com/aKLqJ5Q.png");
+}
+
+#planit-bg {
+    background: linear-gradient(65deg, var(--primary-faded), var(--primary-faded)),
+        url("https://imgur.com/aKLqJ5Q.png");
+}
+
+#jrc-bg {
+    background: linear-gradient(65deg, var(--primary-faded), var(--primary-faded)),
+        url("https://imgur.com/aKLqJ5Q.png");
+}
+
 /* --------------------------------
 # Curves & Waves
 -------------------------------- */
@@ -502,4 +527,63 @@ footer>p {
     width: calc(300% + 1.3px);
     height: 180px;
     fill: var(--blue);
+}
+
+/* --------------------------------
+# Animations
+-------------------------------- */
+.blur-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.slide-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.slide-opposite-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s .3s;
+}
+
+.slide-up-hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show-slide-up {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+@media(prefers-reduced-motion) {
+
+    .slide-hidden {
+        transition: none;
+    }
+
+    .slide-opposite-hidden {
+        transition: none;
+    }
+
+    .slide-up-hidden {
+        transition: none;
+    }
 }
