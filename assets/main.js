@@ -52,3 +52,4 @@ slideElements.forEach((element) => observer.observe(element))
 oppositeSlideElements.forEach((element) => observer.observe(element))
 slideUpElements.forEach((element) => observer2.observe(element))
 
+

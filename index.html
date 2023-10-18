@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Serif+Display&family=Nunito&family=Playball&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Serif+Display&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/main.css">
     <title>Portfolio</title>
 </head>
@@ -23,7 +23,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16"><path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/></svg>
             <span class="nav-link-spans">Projects</span>
         </a>
-        <a class="nav-links" href="#skills">
+        <a class="nav-links" href="#socials">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard2-data" viewBox="0 0 16 16"><path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z"/><path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-12Z"/><path d="M10 7a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7Zm-6 4a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm4-3a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1Z"/></svg>
             <span class="nav-link-spans">Skills</span>
         </a>
@@ -31,7 +31,7 @@
     <section id="header" class="header-container">
         <div class="header-subcontainer">
             <div class="header-body">
-                <h1 class="name slide-hidden">ZACHARY</h1>
+                <h1 id="first-name" class="name slide-hidden">ZACHARY</h1>
                 <h1 id="last-name" class="name slide-hidden">VASQUEZ</h1>
             </div>
             <div class="profile-img-container">
@@ -73,7 +73,7 @@
                 <p>
                     I've been building and designing projects for over 3 years and currently based out of 
                     Vancouver, Washington. Throughout the years I've been learing a variety of technologies
-                    and have a strong base of understanding with each. I'm always learing and trying out new 
+                    and have a strong base of understanding with each. I'm always learning and trying out new 
                     techniques and designs for my projects. I live to learn and live to work for the things 
                     I'm passionate about.
                 </p>
@@ -83,7 +83,7 @@
     <div class="waves layer2">       
         <h1 class="section-titles blur-hidden">Bringing ideas into reality</h1>
     </div>
-    <section class="projects-container">
+    <section id="projects" class="projects-container">
         
         <div class="project-card ">
             <img data-modal="modal-one" src="https://imgur.com/v4Q8ICC.png" alt="">
@@ -127,8 +127,8 @@
                             near future!
                         </p>
                         <div class="modal-link-container">
-                            <a href="https://github.com/ZeroDegree0123/VasquezFarms">Source Code</a>
-                            <a href="https://vasquez-farms.herokuapp.com/">Live App</a>
+                            <a href="https://github.com/ZeroDegree0123/VasquezFarms" target="_blank">Source Code</a>
+                            <a href="https://vasquez-farms.herokuapp.com/" target="_blank">Live App</a>
                         </div>
                     </div>
                     <button class="close modal-exit">X</button>
@@ -180,8 +180,8 @@
                             of membership benefits functionality. 
                         </p>
                         <div class="modal-link-container">
-                            <a href="https://github.com/ZeroDegree0123/restaurant">Source Code</a>
-                            <a href="https://zachs-burgers.herokuapp.com/">Live App</a>
+                            <a href="https://github.com/ZeroDegree0123/restaurant" target="_blank">Source Code</a>
+                            <a href="https://zachs-burgers.herokuapp.com/" target="_blank">Live App</a>
                         </div>
                     </div>
                     <button class="close modal-exit">X</button>
@@ -233,8 +233,8 @@
                             user customization, and push notifications.
                         </p>
                         <div class="modal-link-container">
-                            <a href="https://github.com/ZeroDegree0123/VasquezFarms">Source Code</a>
-                            <a href="https://vasquez-farms.herokuapp.com/">Live App</a>
+                            <a href="https://github.com/ZeroDegree0123/mrSchedule" target="_blank">Source Code</a>
+                            <a href="https://plan-i-t.herokuapp.com/" target="_blank">Live App</a>
                         </div>
                     </div>
                     <button class="close modal-exit">X</button>
@@ -279,7 +279,7 @@
                             Future plans for the site are in progress.
                         </p>
                         <div class="modal-link-container">
-                            <a href="https://jrcconstruct.com/">Live App</a>
+                            <a href="https://jrcconstruct.com/" target="_blank">Live App</a>
                         </div>
                     </div>
                     <button class="close modal-exit">X</button>
@@ -291,25 +291,25 @@
     <div class="waves layer3">
         <h1 class="section-titles footer-title blur-hidden">Get In Touch</h1>
     </div>
-    <footer>
+    <footer id="socials">
         <div class="contacts-container">
             <ul class="contacts-list">
                 <li class="slide-hidden">
-                    <a class="contact-links" href="">
+                    <a class="contact-links" href="https://www.linkedin.com/in/zacharymvasquez/" target="_blank">
                         <?xml version="1.0" encoding="utf-8"?>
                         <svg width="40px" height="40px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#ffc800" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/></svg>
                     </a>
                     LinkedIn
                 </li>
                 <li class="slide-up-hidden">
-                    <a class="contact-links" href="">
+                    <a class="contact-links" href="mailto:zachary.vasquez.w@gmail.com" target="_blank">
                         <?xml version="1.0" encoding="iso-8859-1"?>
                         <svg height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve"><path style="fill:#FA6E51;" d="M512,256.006C512,397.402,397.394,512.004,256.004,512C114.606,512.004,0,397.402,0,256.006C-0.007,114.61,114.606,0,256.004,0C397.394,0,512,114.614,512,256.006z"/><path style="fill:#E8573F;" d="M512,256.005c0-13.015-0.987-25.798-2.861-38.291c-0.14-0.138-0.272-0.282-0.417-0.417c-0.367-0.394-0.742-0.769-1.136-1.136c-0.368-0.395-87.19-87.217-87.585-87.585c-4.134-4.437-9.981-7.258-16.511-7.258H108.51c-12.481,0-22.633,10.148-22.633,22.629v224.103c0,6.529,2.82,12.373,7.258,16.507c0.368,0.395,0.743,0.771,1.139,1.139c0.367,0.395,122.45,122.476,122.845,122.843c0.194,0.208,0.399,0.4,0.599,0.599c12.492,1.873,25.274,2.86,38.288,2.86C397.394,512.004,512,397.401,512,256.005z"/><path style="fill:#F4F6F9;" d="M403.49,121.319H108.51c-12.481,0-22.633,10.148-22.633,22.629v224.104c0,12.481,10.151,22.629,22.633,22.629h294.981c12.481,0,22.633-10.148,22.633-22.629V143.949C426.123,131.468,415.971,121.319,403.49,121.319z M100.053,145.605l112.945,114.859L100.053,366.766V145.605z M265.76,274.061c-5.466,5.302-14.038,5.302-19.399,0.117L109.995,135.497h292.011L265.76,274.061z M222.945,270.579l13.429,13.658c5.486,5.316,12.523,7.982,19.58,7.982c7.095,0,14.211-2.692,19.791-8.099l10.074-10.244l115.459,102.63H110.4L222.945,270.579zM295.771,263.754l116.176-118.148v221.415L295.771,263.754z"/></svg>
                     </a>
                     Email
                 </li>
                 <li class="slide-opposite-hidden">
-                    <a class="contact-links" href="">
+                    <a class="contact-links" href="https://github.com/ZeroDegree0123" target="_blank">
                         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
                         <svg width="40px" height="40px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"><g id="icons" transform="translate(56.000000, 160.000000)"><path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path></g></g></g></svg>
                     </a>
