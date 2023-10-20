@@ -25,6 +25,7 @@
 }
 
 body {
+    width: 100%;
     margin: 0;
     overflow-x: hidden;
     background-color: var(--primary);
@@ -699,7 +700,6 @@ footer>p {
     /*---- ABOUT ----*/
     .about-body-container {
         flex-direction: column;
-        padding: 25px;
     }
 
     .about-body-container>img {
@@ -758,5 +758,17 @@ footer>p {
 
     .modal-description-container>p {
         font-size: 16px;
+    }
+
+    .slide-hidden {
+        transition: none;
+    }
+
+    .slide-opposite-hidden {
+        transition: none;
+    }
+
+    .slide-up-hidden {
+        transition: none;
     }
 }
