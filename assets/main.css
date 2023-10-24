@@ -383,7 +383,7 @@ footer {
 }
 
 footer>p {
-    padding-top: 150px;
+    margin-top: auto;
 }
 
 .footer-title {
