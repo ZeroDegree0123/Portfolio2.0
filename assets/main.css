@@ -428,7 +428,6 @@ footer>p {
 /* --------------------------------
 # Modal
 -------------------------------- */
-
 .modal {
     display: flex;
     justify-content: center;
@@ -452,19 +451,27 @@ footer>p {
 
 .modal-bg {
     position: absolute;
-    background: white;
     width: 100%;
     height: 100%;
 }
 
 .modal-body {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+    color: white;
+}
+
+.modal-line-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    z-index: inherit;
-    color: white;
 }
 
 .close {
@@ -485,14 +492,11 @@ footer>p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
     width: 100%;
-    height: 70%;
 }
 
 .modal-img-container>img {
-    width: 450px;
-    height: 300px;
+    width: 90%;
     box-shadow: var(--lg-shadow);
 }
 
@@ -501,7 +505,7 @@ footer>p {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 450px;
+    width: 90%;
 }
 
 .modal-img-body>h3 {
@@ -527,8 +531,7 @@ footer>p {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    height: 70%;
+    width: 90%;
 }
 
 .modal-description-container>h1 {
@@ -540,7 +543,7 @@ footer>p {
 .modal-description-container>p {
     font-size: 18px;
     line-height: 1.25;
-    width: 65%;
+    width: 90%;
 }
 
 .modal-link-container {
@@ -575,6 +578,72 @@ footer>p {
 #jrc-bg {
     background: linear-gradient(65deg, var(--primary-faded), var(--primary-faded)),
         url("https://imgur.com/ySxhDLf.png");
+}
+
+@media screen and (max-width: 1000px) {
+    .modal-body {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 45% 55%;
+    }
+
+    .modal-img-container {
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal-img-container>img {
+        width: 60%;
+    }
+
+    .modal-img-body {
+        align-items: center;
+    }
+
+    .modal-img-body>h3 {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .modal-tech-list {
+        justify-content: space-evenly;
+    }
+
+    .modal-tech-list>p {
+        font-size: 14px;
+        padding: 0 5px 0 2.5px;
+        border-left: 2px solid var(--red);
+    }
+
+    .modal-line-container {
+        display: none;
+    }
+
+
+    .modal-description-container {
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        padding-top: 25px;
+    }
+
+    .modal-description-container>h1 {
+        font-size: 25px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .modal-description-container>p {
+        font-size: 14px;
+        line-height: 1.15;
+        margin: 0;
+    }
+
+    .modal-link-container>a {
+        font-size: 18px;
+    }
 }
 
 /* --------------------------------
