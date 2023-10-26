@@ -246,7 +246,7 @@ section {
 }
 
 .line-break {
-    border-right: 2px solid var(--blue);
+    border-left: 2px solid var(--blue);
     width: 2px;
     height: 400px;
     margin: 0 10px;
