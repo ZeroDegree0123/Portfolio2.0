@@ -547,14 +547,14 @@ footer>p {
     font-size: 18px;
     line-height: 1.25;
     width: 90%;
-    padding: 10px 0;
+    padding: 2px 0;
 }
 
 .modal-link-container {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 35px;
+    padding-top: 10px;
 }
 
 .modal-link-container>a {
