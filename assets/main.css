@@ -547,6 +547,7 @@ footer>p {
     font-size: 18px;
     line-height: 1.25;
     width: 90%;
+    padding: 10px 0;
 }
 
 .modal-link-container {
@@ -561,6 +562,10 @@ footer>p {
     text-decoration: none;
     color: var(--blue);
     padding: 0 20px;
+}
+
+#planit-warning {
+    color: var(--yellow);
 }
 
 #vasquez-farms-bg {
