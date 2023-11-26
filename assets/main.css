@@ -172,6 +172,12 @@ section {
     margin-right: -100px;
 }
 
+@media screen and (min-width: 1600px) {
+    .header-body>h1 {
+        font-size: 75px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .header-subcontainer {
         display: flex;
@@ -330,8 +336,7 @@ section {
 }
 
 .project-card>img {
-    width: 80%;
-    height: 20rem;
+    width: 75%;
     box-shadow: var(--lg-shadow);
     transition: all ease .5s;
     cursor: pointer;
@@ -369,7 +374,6 @@ section {
 
     .project-card>img {
         width: 80%;
-        height: 50%;
     }
 }
 
